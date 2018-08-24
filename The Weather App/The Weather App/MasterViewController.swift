@@ -145,10 +145,10 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        // Data is not yet loaded from API
+        // Data is not loaded from API
         if(WeatherInformation?.DailyForecasts == nil)
         {
-            return 1
+            return 0
         }
         return 5
 
@@ -174,10 +174,10 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    // On TableView Cell touched
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let detailsView = DetailViewController()
-       
         let cell = tableView.cellForRow(at: indexPath) as! MyCustomForecastCell
         
         

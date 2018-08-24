@@ -37,17 +37,15 @@ class DetailViewController: UIViewController {
     func populateData() {
         self.navigationItem.title = day
         
-        minTempLabel.text = minTemp
-        maxTempLabel.text = maxTemp
+        minTempLabel.text = (minTemp == nil) ? "- F" : minTemp
+        maxTempLabel.text = (maxTemp == nil) ? "- F" : maxTemp
         
-        feelsLikeMinTemp.text = minFeelTemp
-        feelsLikeMaxTemp.text = maxFeelTemp
+        feelsLikeMinTemp.text = (minFeelTemp == nil) ? "- F" : minFeelTemp
+        feelsLikeMaxTemp.text = (maxFeelTemp == nil) ? "- F" : maxFeelTemp
         
-        dayDescContentLabel.text = dayDescription
-        nightDescContentLabel.text = nightDescription
+        dayDescContentLabel.text = (dayDescription == nil) ? "-" : dayDescription
+        nightDescContentLabel.text = (nightDescription == nil) ? "-" : nightDescription
     }
-    
-    
     
     
     
