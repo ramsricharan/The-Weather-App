@@ -228,7 +228,6 @@ class DetailViewController: UIViewController {
         tempLabelsHolderView.topAnchor.constraint(equalTo: baseView.topAnchor, constant: 8).isActive = true
         tempLabelsHolderView.widthAnchor.constraint(equalTo: baseView.widthAnchor, multiplier: 0.9).isActive = true
         tempLabelsHolderView.centerXAnchor.constraint(equalTo: baseView.centerXAnchor).isActive = true
-        
         makeTempViews(BaseHolderView: tempLabelsHolderView, HeadingLabel: tempHeadingLabel, MinTempLabel: minTempLabel, MaxTempLabel: maxTempLabel)
         
         
@@ -242,7 +241,7 @@ class DetailViewController: UIViewController {
         
         // Make Day Description View
         baseView.addSubview(dayDescHeadingLabel)
-        dayDescHeadingLabel.topAnchor.constraint(equalTo: feelsLikeHolderView.bottomAnchor, constant: 8).isActive = true
+        dayDescHeadingLabel.topAnchor.constraint(equalTo: feelsLikeHolderView.bottomAnchor, constant: 16).isActive = true
         dayDescHeadingLabel.centerXAnchor.constraint(equalTo: baseView.centerXAnchor).isActive = true
         
         baseView.addSubview(dayDescContentLabel)
@@ -253,12 +252,13 @@ class DetailViewController: UIViewController {
         
         // Make Night Descripion View
         baseView.addSubview(nightDescHeadingLabel)
-        nightDescHeadingLabel.topAnchor.constraint(equalTo: dayDescContentLabel.bottomAnchor, constant: 8).isActive = true
+        nightDescHeadingLabel.topAnchor.constraint(equalTo: dayDescContentLabel.bottomAnchor, constant: 16).isActive = true
         nightDescHeadingLabel.centerXAnchor.constraint(equalTo: baseView.centerXAnchor).isActive = true
         
         baseView.addSubview(nightDescContentLabel)
         nightDescContentLabel.topAnchor.constraint(equalTo: nightDescHeadingLabel.bottomAnchor, constant: 8).isActive = true
         nightDescContentLabel.centerXAnchor.constraint(equalTo: baseView.centerXAnchor).isActive = true
+        
     }
     
     
