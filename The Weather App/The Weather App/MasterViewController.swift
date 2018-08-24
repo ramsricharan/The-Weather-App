@@ -180,7 +180,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
        
         let cell = tableView.cellForRow(at: indexPath) as! MyCustomForecastCell
         
-        /*
+        
         detailsView.day = cell.dateLabel.text
         
         detailsView.minTemp = String (WeatherInformation!.DailyForecasts![indexPath.row].Temperature?.Minimum?.Value ?? 0) + " F"
@@ -190,8 +190,9 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         detailsView.dayDescription = WeatherInformation!.DailyForecasts![indexPath.row].Day?.LongPhrase ?? "None" 
         detailsView.nightDescription = WeatherInformation!.DailyForecasts![indexPath.row].Night?.LongPhrase ?? "None"
-        */
+        
  
+        /*
         // Testing Data
         detailsView.day = "24 August"
         detailsView.minTemp = "83 F"
@@ -201,7 +202,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         detailsView.dayDescription = "The Weather is Mostly Sunny"
         detailsView.nightDescription = "It is likely to rain. Mostly Cloudy"
-        
+        */
         
         
         self.navigationController?.pushViewController(detailsView, animated: true)
