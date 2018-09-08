@@ -3,11 +3,12 @@
 
 
 ### Project Setup
-> **Category:** Coding Challenge
-> **Programming Language:** Swift 4
-> **IDE:** XCode
-> **Platform:** iOS
-
+```
+ Category: Coding Challenge
+ Programming Language: Swift 4
+ IDE: XCode
+ Platform: iOS
+```
 
 ### About App
 Developed a simple Weather Application to show 5-days weather forecast based on
