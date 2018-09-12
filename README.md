@@ -2,7 +2,7 @@
 **Work Home Project by AppliedVR**
 
 
-### Project Setup
+## Project Setup
 ```
  Category: Coding Challenge
  Programming Language: Swift 4
@@ -10,7 +10,7 @@
  Platform: iOS
 ```
 
-### About App
+## About App
 Developed a simple Weather Application to show 5-days weather forecast based on
 the entered City name.
 
